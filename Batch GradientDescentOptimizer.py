@@ -38,7 +38,7 @@ loss=tf.reduce_mean(tf.reduce_sum(tf.square(ys-prediction),
                    reduction_indices=[1]))
 train_step=tf.train.GradientDescentOptimizer(0.1).minimize(loss)#GradientDescentOptimizer给定一个learning rate,通常是小于1
 #must step,初始化变量
-init=tf.initialize_all_variables()
+init=tf.global_variables_initializer()
 
 with tf.Session() as sess:
     sess.run(init)

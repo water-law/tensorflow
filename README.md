@@ -11,6 +11,24 @@ else if  CPU support sse2 then `pip install .\CPU\sse2\tensorflow-1.12.0-cp36-cp
 
 the protobuf>3.6.0 get an error using tensorflow==1.12.0, you should use protobuf==3.6.0.
 
+when using
+
+```
+pip install matplotlib
+```
+
+if ocurr an error
+
+```
+import _tkinter # If this fails your Python may not be configured for Tk
+   ImportError: No module named _tkinter
+```
+
+then cd to python home path, execute
+
+```
+git clone https://github.com/water-law/tkinter.git
+```
 
 # run
 ```
